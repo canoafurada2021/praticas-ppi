@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quest.css">
+
+    <title>Questão 4</title>
+</head>
+<body>
+    <div class="elemento" id="myDiv"></div>
+
+
+
+
+<script>
+      // Função para mudar a cor automaticamente
+  function mudarCorAutomaticamente() {
+    //Identifica a div a partir do id atribuido a mesma
+    var div = document.getElementById("myDiv");
+    div.classList.toggle("change-color"); // Adiciona ou remove a classe de mudança de cor
+    setTimeout(changeColorAutomatically, 2000); // Chama a função novamente após 2 segundos
+  }
+
+  // Inicia a mudança de cor automaticamente quando a página carregar
+  window.onload = function() {
+    mudarCorAutomaticamente();
+  };
+</script>
+
+</body>
+</html>

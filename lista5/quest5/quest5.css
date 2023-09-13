@@ -1,0 +1,23 @@
+body{
+    margin: 80px;
+    overflow: hidden;
+}
+.foguete{
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: subindo 3s linear infinite;
+
+}
+
+@keyframes subindo {
+    0%{
+        transform: translateX(-50%) translateY(0);
+    }
+    100%{
+        transform: translateX(-50%) translateY(-100vh);
+    }
+}

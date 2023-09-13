@@ -1,0 +1,14 @@
+.elemento{
+    
+        background: orange;
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+transition: background-color 2s ease;    
+}
+
+
+.elemento.change-color{
+    background-color: blue;
+}
+
